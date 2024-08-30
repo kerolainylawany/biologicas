@@ -1,0 +1,61 @@
+:root {
+    /* Definição de variáveis CSS para as cores usadas no site */
+    --cor-fundo: gray;           /* Cor de fundo principal */
+    --cor-principal: #0B0D20;    /* Cor principal usada nos elementos de destaque */
+    --cor-secundaria: #212333;   /* Cor secundária usada em botões e outros elementos */
+    --cor-destaque: #d3c47a;     /* Cor usada para destacar textos e botões */
+    --cor-texto: #D7F9FF;        /* Cor padrão do texto */
+}
+
+body {
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o padding padrão do body */
+    background: no-repeat left center; /* Remove qualquer repetição da imagem de fundo */
+    background-color: var(--cor-fundo); /* Aplica a cor de fundo definida na variável */
+    color: var(--cor-texto); /* Define a cor do texto utilizando a variável correspondente */
+    display: flex; /* Utiliza Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo */
+    align-items: center; /* Centraliza verticalmente o conteúdo */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura total da viewport */
+}
+
+.caixa-principal {
+    background: no-repeat right top; /* Remove repetição da imagem de fundo (se houver) */
+    background-color: var(--cor-principal); /* Define a cor de fundo da caixa principal */
+    opacity : 0.8; /* Define a transparência da caixa principal */
+    width: 90%; /* Define a largura como 90% do elemento pai */
+    max-width: 600px; /* Define a largura máxima da caixa principal */
+    top: 50px; /* Define a distância do topo da página */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    padding: 20px; /* Adiciona espaço interno (padding) ao redor do conteúdo */
+    border-radius: 20px; /* Arredonda os cantos da caixa principal */
+    box-shadow: 20px 20px 20px #000; /* Adiciona uma sombra à caixa principal */
+    box-sizing: border-box; /* Inclui o padding e border no cálculo do tamanho total da caixa */
+    position: relative; /* Define a posição da caixa como relativa ao seu estado normal */
+    z-index: 1; /* Garante que a caixa principal esteja em cima de outros elementos sobrepostos */
+    background-size: 150px; /* Define o tamanho da imagem de fundo */
+    margin-top: -150px; /* Move a caixa para cima para compensar o alinhamento vertical */
+}
+
+.caixa-alternativas {
+    margin-top: 10px; /* Adiciona um espaço superior às alternativas de resposta */
+}
+
+h1 {
+    color: var(--cor-destaque); /* Define a cor do título H1 */
+}
+
+button {
+    background-color: var(--cor-secundaria); /* Define a cor de fundo dos botões */
+    color: var(--cor-texto); /* Define a cor do texto dos botões */
+    border: none; /* Remove qualquer borda padrão dos botões */
+    border-radius: 15px; /* Arredonda os cantos dos botões */
+    padding: 15px; /* Adiciona espaço interno (padding) ao redor do texto dos botões */
+    margin-left: 10px; /* Adiciona um espaço à esquerda de cada botão */
+    transition: background-color 0.3s; /* Define uma transição suave na mudança de cor do fundo */
+}
+
+button:hover {
+    background-color: var(--cor-destaque); /* Muda a cor de fundo quando o botão é "hovered" */
+    color: var(--cor-principal); /* Muda a cor do texto ao passar o mouse sobre o botão */
+}
